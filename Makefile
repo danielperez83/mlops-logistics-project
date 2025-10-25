@@ -15,12 +15,13 @@ help:
 	@echo "============================================"
 	@echo "MLOps Logistics - Comandos Disponibles"
 	@echo "============================================"
-	@echo "make install    - Instalar dependencias"
-	@echo "make train      - Entrenar modelo"
-	@echo "make test       - Ejecutar tests"
-	@echo "make lint       - Verificar código con flake8"
-	@echo "make clean      - Limpiar archivos generados"
-	@echo "make all        - Ejecutar pipeline completo"
+	@echo "make install      - Instalar dependencias"
+	@echo "make train        - Entrenar modelo baseline"
+	@echo "make experiment   - Ejecutar múltiples experimentos"
+	@echo "make test         - Ejecutar tests"
+	@echo "make lint         - Verificar código con flake8"
+	@echo "make clean        - Limpiar archivos generados"
+	@echo "make all          - Ejecutar pipeline completo"
 	@echo "============================================"
 
 # Instalar dependencias
@@ -35,6 +36,12 @@ train:
 	@echo "🚀 Ejecutando pipeline de entrenamiento..."
 	$(PYTHON) $(SRC_DIR)/train.py
 	@echo "✅ Entrenamiento completado"
+
+# Ejecutar experimentos con diferentes hiperparámetros
+experiment:
+	@echo "🔬 Ejecutando experimentos con múltiples configuraciones..."
+	$(PYTHON) $(SRC_DIR)/experiment.py
+	@echo "✅ Experimentación completada - Ver resultados en MLflow UI"
 
 # Ejecutar tests
 test:
