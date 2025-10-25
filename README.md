@@ -204,6 +204,10 @@ El proyecto incluye automatización completa con GitHub Actions que:
 
 ![GitHub Actions - Artefactos](images/Git2.jpg)
 
+**Ejecuciones:**
+
+![GitHub Actions - Ejecuciones del Pipeline](images/Git3.jpg)
+
 El workflow genera artefactos descargables que incluyen:
 - Modelo entrenado (mlruns/)
 - Feature importance (CSV)
