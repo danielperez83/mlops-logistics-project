@@ -34,16 +34,29 @@ mlops-logistics-project/
 │   ├── __init__.py
 │   ├── data_loader.py          # Carga y validación de datos
 │   ├── preprocessing.py        # Preprocesamiento de datos
-│   └── train.py                # Entrenamiento y MLflow tracking
+│   ├── train.py                # Entrenamiento y MLflow tracking
+│   └── experiment.py           # Experimentación con hiperparámetros
 ├── tests/
 │   └── test_basic.py           # Tests unitarios
 ├── data/
-│   └── smart_logistics_dataset.csv
+│   └── smart_logistics_dataset.csv  # Dataset de logística
+├── images/                     # Evidencias visuales del proyecto
+│   ├── Git1.jpg                # GitHub Actions - Pipeline exitoso
+│   ├── Git2.jpg                # GitHub Actions - Artefactos
+│   ├── MLflow1.jpg             # MLflow - Experimentos
+│   ├── MLflow2.jpg             # MLflow - Comparación
+│   ├── MLflow3.jpg             # MLflow - Modelo con signature
+│   └── VS1.jpg                 # Estructura del proyecto
+├── mlruns/                     # Directorio de MLflow (generado)
 ├── config.yaml                 # Configuración e hiperparámetros
-├── requirements.txt            # Dependencias
+├── requirements.txt            # Dependencias del proyecto
 ├── Makefile                    # Automatización de tareas
-└── README.md
+├── .gitignore                  # Archivos excluidos de Git
+├── feature_importance.csv      # Feature importance (generado)
+└── README.md                   # Documentación del proyecto
 ```
+
+![Vista de la estructura del proyecto en VS Code](images/VS1.jpg)
 
 ## 🔧 Instalación
 
