@@ -1,8 +1,9 @@
 ## 👥 Autores
 
-**Laura Carolina Mateus Agudelo**
-**Andrés Felipe Sainea Rojas**
-**Daniel Antonio Perez Beltran**
+- **Laura Carolina Mateus Agudelo**
+- **Andrés Felipe Sainea Rojas**
+- **Daniel Antonio Pérez Beltrán**
+
 - Universidad EAN
 - Maestria en Ciencia de Datos
 - Proyecto Final - MLOps
@@ -178,6 +179,21 @@ El proyecto incluye automatización completa con GitHub Actions que:
 
 **Ver workflow**: `.github/workflows/ml.yml`
 
+### Evidencias de Ejecución
+
+**Pipeline Completo Ejecutado:**
+
+![GitHub Actions - Pipeline Exitoso](images/Git1.jpg)
+
+**Artefactos Generados:**
+
+![GitHub Actions - Artefactos](images/Git2.jpg)
+
+El workflow genera artefactos descargables que incluyen:
+- Modelo entrenado (mlruns/)
+- Feature importance (CSV)
+- Logs de ejecución
+
 ## 📝 MLflow Tracking
 
 El proyecto utiliza MLflow para:
@@ -191,6 +207,30 @@ El proyecto utiliza MLflow para:
 **Experiment Name**: `smart_logistics_delay_prediction`
 
 **Modelo Registrado**: `smart_logistics_rf_model`
+
+**Vista de Experimentos:**
+
+![MLflow - Experimentos](images/MLFlow1.jpg)
+
+Todos los experimentos quedan registrados con sus parámetros y métricas, permitiendo comparación y reproducibilidad.
+
+**Comparación de Modelos:**
+
+![MLflow - Comparación](images/MLFlow2.jpg)
+
+MLflow permite comparar múltiples configuraciones de hiperparámetros lado a lado, visualizando cómo cada parámetro afecta las métricas.
+
+**Modelo Registrado con Signature:**
+
+![MLflow - Modelo con Signature](images/MLFlow3.jpg)
+
+El modelo incluye:
+- ✅ **Signature**: Schema de entrada (13 features) y salida
+- ✅ **Input Example**: Ejemplos de datos de entrada
+- ✅ **Metadata completa**: Timestamp, source run, versión
+
+Esto garantiza que el modelo es deployable y tiene un contrato claro de entrada/salida.
+```
 
 El modelo incluye:
 - ✅ Signature (definición de input/output)
