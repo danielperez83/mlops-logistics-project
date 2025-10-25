@@ -9,7 +9,7 @@ mlruns/
 mlartifacts/
 
 # Data
-*.csv
+#*.csv
 *.zip
 data/
 
