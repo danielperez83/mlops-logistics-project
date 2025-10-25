@@ -10,6 +10,8 @@
 
 # 🚀 Smart Logistics Delay Prediction - MLOps Project
 
+> **Repositorio GitHub**: [https://github.com/danielperez83/mlops-logistics-project]
+
 Proyecto de automatización de pipeline de Machine Learning con GitHub Actions y MLflow para predicción de retrasos en logística.
 
 ## 📊 Descripción del Proyecto
