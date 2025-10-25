@@ -45,15 +45,15 @@ mlops-logistics-project/
 ## 🔧 Instalación
 
 ### Requisitos Previos
-- Python 3.9+
-- pip
+- **Python 3.9 - 3.12** (recomendado: 3.9 o 3.10)
+- pip >= 21.0
 - Git
 
 ### Pasos de Instalación
 
 1. **Clonar el repositorio**
 ```bash
-git clone 
+git clone https://github.com/danielperez83/mlops-logistics-project.git
 cd mlops-logistics-project
 ```
 
@@ -63,10 +63,32 @@ python3 -m venv .venv
 source .venv/bin/activate  # En Windows: .venv\Scripts\activate
 ```
 
-3. **Instalar dependencias**
+3. **Actualizar pip y setuptools**
 ```bash
+pip install --upgrade pip setuptools
+```
+
+4. **Instalar dependencias**
+```bash
+pip install -r requirements.txt
+# O usando make
 make install
-# O manualmente: pip install -r requirements.txt
+```
+
+### Troubleshooting
+
+**Si usas Python 3.12 y ves warnings de `pkg_resources`:**
+```bash
+pip install --upgrade setuptools mlflow
+```
+
+**Si MLflow UI falla:**
+```bash
+# Opción 1: Actualizar MLflow
+pip install --upgrade mlflow
+
+# Opción 2: Usar Python directamente
+python -m mlflow ui
 ```
 
 ## 🚀 Uso
