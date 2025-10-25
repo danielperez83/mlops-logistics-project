@@ -1,0 +1,22 @@
+# Dependencias del proyecto MLOps Logistics
+
+# Core ML libraries
+pandas==2.1.4
+numpy==1.26.3
+scikit-learn==1.4.0
+
+# MLflow para tracking
+mlflow==2.9.2
+
+# Configuración
+pyyaml==6.0.1
+
+# Visualización (opcional)
+matplotlib==3.8.2
+seaborn==0.13.1
+
+# Testing
+pytest==7.4.4
+
+# Linting
+flake8==7.0.0

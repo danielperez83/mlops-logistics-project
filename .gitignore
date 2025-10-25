@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Data
+*.csv
+*.zip
+data/
+
+# Models
+models/
+*.pkl
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+*.Zone.Identifier
+
+# Testing
+.pytest_cache/
+.coverage
+
+# Logs
+*.log
